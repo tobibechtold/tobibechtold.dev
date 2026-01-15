@@ -1,12 +1,56 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Github } from "lucide-react";
+import ProjectCard from "@/components/ProjectCard";
+import SocialLink from "@/components/SocialLink";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <main className="mx-auto max-w-2xl px-6 py-20 md:py-32">
+        {/* Hero */}
+        <section className="animate-fade-in">
+          <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            Tobi Bechtold
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Developer from Germany.
+            <br />
+            Building apps that make life easier.
+          </p>
+        </section>
+
+        {/* Projects */}
+        <section className="mt-16 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+            Projects
+          </h2>
+          <div className="mt-6 space-y-4">
+            <ProjectCard
+              title="FiftyFifty"
+              description="Split decisions with friends, made simple."
+              url="https://fiftyfifty.cloud"
+            />
+            <ProjectCard
+              title="Intake"
+              description="Track and manage your daily intake."
+              url="https://intake.tobibechtold.dev"
+            />
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="mt-20 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="flex items-center gap-6">
+            <SocialLink
+              href="https://github.com/tobibechtold"
+              icon={<Github className="h-5 w-5" />}
+              label="GitHub"
+            />
+          </div>
+          <p className="mt-8 text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Tobi Bechtold
+          </p>
+        </footer>
+      </main>
     </div>
   );
 };
