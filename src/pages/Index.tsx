@@ -1,4 +1,5 @@
 import { Github, AtSign } from "lucide-react";
+import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 
@@ -39,7 +40,13 @@ const Index = () => {
             <SocialLink href="https://github.com/tobibechtold" icon={<Github className="h-5 w-5" />} label="GitHub" />
             <SocialLink href="https://www.threads.com/@tob1.b" icon={<AtSign className="h-5 w-5" />} label="Threads" />
           </div>
-          <p className="mt-8 text-xs text-muted-foreground">© {new Date().getFullYear()} Tobias Bechtold</p>
+          <div className="mt-8 flex items-center gap-4 text-xs text-muted-foreground">
+            <span>© {new Date().getFullYear()} Tobias Bechtold</span>
+            <span>·</span>
+            <Link to="/impressum" className="transition-colors hover:text-primary">
+              Impressum
+            </Link>
+          </div>
         </footer>
       </main>
     </div>
