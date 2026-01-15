@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, AtSign } from "lucide-react";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 
@@ -26,12 +26,12 @@ const Index = () => {
           <div className="mt-6 space-y-4">
             <ProjectCard
               title="FiftyFifty"
-              description="Split decisions with friends, made simple."
+              description="Share Mental Load, Strengthen Your Bond"
               url="https://fiftyfifty.cloud"
             />
             <ProjectCard
               title="Intake"
-              description="Track and manage your daily intake."
+              description="Calorie counting. Simplified."
               url="https://intake.tobibechtold.dev"
             />
           </div>
@@ -44,6 +44,11 @@ const Index = () => {
               href="https://github.com/tobibechtold"
               icon={<Github className="h-5 w-5" />}
               label="GitHub"
+            />
+            <SocialLink
+              href="https://www.threads.com/@tob1.b"
+              icon={<AtSign className="h-5 w-5" />}
+              label="Threads"
             />
           </div>
           <p className="mt-8 text-xs text-muted-foreground">
