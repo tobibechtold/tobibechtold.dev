@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, url, logo }: ProjectCardProps) => {
       rel="noopener noreferrer"
       className="group block rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:glow-coral"
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-center justify-between gap-4">
         {logo && (
           <div className="flex-shrink-0">
             <img 
