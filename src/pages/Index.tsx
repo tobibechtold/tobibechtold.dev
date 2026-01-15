@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 import FloatingParticles from "@/components/FloatingParticles";
+import fiftyfiftyLogo from "@/assets/fiftyfifty-logo.png";
+import intakeLogo from "@/assets/intake-logo.png";
 
 const Index = () => {
   return (
@@ -27,11 +29,13 @@ const Index = () => {
               title="FiftyFifty"
               description="Share Mental Load, Strengthen Your Bond"
               url="https://fiftyfifty.cloud"
+              logo={fiftyfiftyLogo}
             />
             <ProjectCard
               title="Intake"
               description="Calorie counting. Simplified."
               url="https://intake.tobibechtold.dev"
+              logo={intakeLogo}
             />
           </div>
         </section>
