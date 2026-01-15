@@ -39,7 +39,7 @@ const Index = () => {
             <SocialLink href="https://github.com/tobibechtold" icon={<Github className="h-5 w-5" />} label="GitHub" />
             <SocialLink href="https://www.threads.com/@tob1.b" icon={<AtSign className="h-5 w-5" />} label="Threads" />
           </div>
-          <p className="mt-8 text-xs text-muted-foreground">© {new Date().getFullYear()} Tobi Bechtold</p>
+          <p className="mt-8 text-xs text-muted-foreground">© {new Date().getFullYear()} Tobias Bechtold</p>
         </footer>
       </main>
     </div>
