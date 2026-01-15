@@ -2,14 +2,16 @@ import { Github, AtSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
+import FloatingParticles from "@/components/FloatingParticles";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <main className="mx-auto max-w-2xl px-6 py-20 md:py-32">
+    <div className="min-h-screen bg-background animated-gradient-bg relative">
+      <FloatingParticles />
+      <main className="mx-auto max-w-2xl px-6 py-20 md:py-32 relative z-10">
         {/* Hero */}
         <section className="animate-fade-in">
-          <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">Tobias Bechtold</h1>
+          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl text-gradient-glow">Tobias Bechtold</h1>
           <p className="mt-4 text-lg text-muted-foreground">
             Developer from Germany.
             <br />
