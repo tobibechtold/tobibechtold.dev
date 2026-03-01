@@ -37,6 +37,13 @@ const Index = () => {
               url="https://intake.tobibechtold.dev"
               logo={intakeLogo}
             />
+            <ProjectCard
+              title="Feature Voting Tool"
+              description="Open-source project for deploying your own feature voting tool with Supabase backend."
+              url="https://github.com/tobibechtold/feature-voting-tool"
+              logoIcon={<Github className="h-6 w-6" />}
+              badgeText="Open Source"
+            />
           </div>
         </section>
 
