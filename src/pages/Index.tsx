@@ -34,7 +34,7 @@ const Index = () => {
             <ProjectCard
               title="Intake"
               description="Calorie counting. Simplified."
-              url="https://intake.tobibechtold.dev"
+              url="https://www.getintake.de"
               logo={intakeLogo}
             />
             <ProjectCard
